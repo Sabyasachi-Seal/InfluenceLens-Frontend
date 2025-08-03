@@ -277,10 +277,9 @@ const ButtonGroup = styled.div`
   }
 `;
 
-// read API_BASE_URL from environment variables or set a default
-const API_BASE_URL = process.env.API_BASE_URL || "http://localhost:8000";
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8000";
 
-// Simple markdown parser for feedback formatting
 const parseMarkdown = (text) => {
   if (!text) return text;
 
